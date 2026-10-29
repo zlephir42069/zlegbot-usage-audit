@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "usage-audit"
+version = "0.1.0"
+description = "Offline analyzer that totals AI-agent log spend and flags no-op wakes, chatty schedules, and repeated errors."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "zlephir42069"}]
+keywords = ["agents", "usage", "credits", "audit"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: System :: Monitoring",
+]
+dependencies = ["PyYAML>=5.4"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[project.urls]
+Homepage = "https://github.com/zlephir42069/zlegbot-usage-audit"
+Toolkit = "https://github.com/zlephir42069"
+Wakegate = "https://github.com/zlephir42069/zlegbot-wakegate"
+
+[project.scripts]
+usage-audit = "usage_audit.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["usage_audit*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
