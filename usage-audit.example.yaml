@@ -1,0 +1,24 @@
+# Field mapping for usage-audit. This file matches the built-in defaults.
+# Copy to usage-audit.yaml and change the right-hand names to your columns.
+# The logs in examples/ are synthetic example data, not measured usage.
+
+mapping:
+  timestamp: timestamp
+  agent: agent
+  trigger: trigger
+  routine: routine
+  units: units
+  outcome: outcome
+  duration: duration
+  error: error
+
+top: 10
+retry_min: 2
+
+outcomes:
+  noop: ["no-op", "noop", "unchanged"]
+  changed: ["changed"]
+  error: ["error", "failed", "failure"]
+
+triggers:
+  schedule: ["schedule", "cron", "timer"]

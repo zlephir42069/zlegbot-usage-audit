@@ -1,0 +1,11 @@
+# synthetic example data — not a real agent log. Do not treat these numbers as measured usage.
+{"timestamp":"2026-10-01T00:00:00Z","agent":"inbox-bot","trigger":"schedule","routine":"poll-inbox","units":100,"outcome":"no-op","duration":1.2,"error":""}
+{"timestamp":"2026-10-01T00:15:00Z","agent":"inbox-bot","trigger":"schedule","routine":"poll-inbox","units":100,"outcome":"no-op","duration":1.1,"error":""}
+{"timestamp":"2026-10-01T00:30:00Z","agent":"inbox-bot","trigger":"schedule","routine":"poll-inbox","units":180,"outcome":"changed","duration":4.0,"error":""}
+{"timestamp":"2026-10-01T01:00:00Z","agent":"inbox-bot","trigger":"event","routine":"poll-inbox","units":50,"outcome":"changed","duration":2.0,"error":""}
+{"timestamp":"2026-10-01T02:00:00Z","agent":"digest-bot","trigger":"schedule","routine":"daily-digest","units":400,"outcome":"error","duration":3.5,"error":"upstream timeout"}
+{"timestamp":"2026-10-01T02:05:00Z","agent":"digest-bot","trigger":"schedule","routine":"daily-digest","units":400,"outcome":"error","duration":3.4,"error":"upstream timeout"}
+{"timestamp":"2026-10-01T02:10:00Z","agent":"digest-bot","trigger":"schedule","routine":"daily-digest","units":420,"outcome":"changed","duration":8.0,"error":""}
+{"timestamp":"2026-10-02T00:00:00Z","agent":"inbox-bot","trigger":"schedule","routine":"poll-inbox","units":100,"outcome":"no-op","duration":1.0,"error":""}
+{"timestamp":"2026-10-02T09:00:00Z","agent":"inbox-bot","trigger":"manual","routine":"poll-inbox","units":90,"outcome":"changed","duration":2.5,"error":""}
+{"timestamp":"2026-10-02T12:00:00Z","agent":"digest-bot","trigger":"schedule","routine":"daily-digest","units":10,"outcome":"no-op","duration":0.4,"error":""}

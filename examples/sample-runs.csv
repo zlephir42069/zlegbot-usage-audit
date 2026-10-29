@@ -1,0 +1,12 @@
+# synthetic example data — not a real agent log. Do not treat these numbers as measured usage.
+timestamp,agent,trigger,routine,units,outcome,duration,error
+2026-10-01T00:00:00Z,inbox-bot,schedule,poll-inbox,100,no-op,1.2,
+2026-10-01T00:15:00Z,inbox-bot,schedule,poll-inbox,100,no-op,1.1,
+2026-10-01T00:30:00Z,inbox-bot,schedule,poll-inbox,180,changed,4.0,
+2026-10-01T01:00:00Z,inbox-bot,event,poll-inbox,50,changed,2.0,
+2026-10-01T02:00:00Z,digest-bot,schedule,daily-digest,400,error,3.5,upstream timeout
+2026-10-01T02:05:00Z,digest-bot,schedule,daily-digest,400,error,3.4,upstream timeout
+2026-10-01T02:10:00Z,digest-bot,schedule,daily-digest,420,changed,8.0,
+2026-10-02T00:00:00Z,inbox-bot,schedule,poll-inbox,100,no-op,1.0,
+2026-10-02T09:00:00Z,inbox-bot,manual,poll-inbox,90,changed,2.5,
+2026-10-02T12:00:00Z,digest-bot,schedule,daily-digest,10,no-op,0.4,
